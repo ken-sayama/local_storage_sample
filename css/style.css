@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1000px;
+  margin: 40px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.storeLike-link {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.storeLike-link .storeLike-count {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #28ccaf;
+  color: white;
+}
+
+.back {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 15px 30px;
+  display: block;
+  width: 200px;
+}
+
+#bxslider li {
+  width: 300px;
+  height: 190px;
+  overflow: hidden;
+  list-style: none;
+  float: left;
+}
+
+#bxslider li img {
+  width: 300px;
+  display: block;
+}
+
+#storeLike-show-list li {
+  width: 220px;
+  /*height: 250px;*/
+  float: left;
+  border: 1px solid #ccc;
+  list-style: none;
+  box-shadow:0px 2px 2px 2px #dbdbdb;
+  border-radius:6px;
+  border:1px solid #ada3a3;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+#storeLike-show-list li a {
+  display: block;
+}
+
+#storeLike-show-list li a img {
+  width: 220px;
+}
+
+#storeLike-show-list li a .inner {
+  padding: 5px;
+}
+
+#storeLike-show-list li a .inner h5 {
+  font-size: 14px;
+}

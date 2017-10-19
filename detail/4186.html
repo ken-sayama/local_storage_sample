@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sample for localStorage</title>
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery.min.js" charset="utf-8"></script>
+  <script src="../js/store.legacy.min.js" charset="utf-8"></script>
+  <!-- <script src="../js/common.js" charset="utf-8"></script> -->
+  <script src="../js/storeLike.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).storeLike({
+        object: {
+          title: $('a'),
+          text: $('h2').text()
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <button class="storeLike-btn fa fa-star-o">お気に入りに追加する</button>
+  <ul id="bxslider" class="clearfix">
+    <li><img src="../images/olu-eletu-134760.jpg" alt=""></li>
+    <li><img src="../images/ales-krivec-188743.jpg" alt=""></li>
+    <li><img src="../images/martin-sattler-160751.jpg" alt=""></li>
+  </ul>
+  <div class="jobdetail">
+    <h2 itemprop="title">保育ルームOhana梅屋敷駅前園</h2>
+    <table class="detail">
+      <tr>
+        <th>給与</th>
+        <td class="storeLike-salary">月給：200,000円～230,000円</td>
+      </tr>
+      <tr>
+        <th>職種</th>
+        <td class="storeLike-job-category">保育士</td>
+      </tr>
+      <tr>
+        <th>雇用形態</th>
+        <td class="storeLike-job-status">正社員</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="address">
+    <table class="detail">
+      <tr>
+        <th>勤務地</th>
+        <td class="storeLike-location">東京都大田区大森西6-15-10 1F</td>
+      </tr>
+    </table>
+  </div>
+  <a class="back" href="../index.html">前のページにもどる</a>
+</body>
+</html>
