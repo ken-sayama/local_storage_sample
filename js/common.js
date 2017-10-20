@@ -7,7 +7,7 @@ $(function() {
   var id = window.location.href.match(".+/(.+?)\.[a-z]+([\?#;].*)?$");
   // トップページで変数未定義エラーがおきてしまうので、以下の分岐で対処
   if (!id) {delete id;} else {id = Number(id[1]);}
-  var title = $('.storeLike-title').text();
+  var title = $('[itemprop="title"]').text();
   var image = $('#bxslider li').first().children('img').attr('src');
   var salary = $('.storeLike-salary').text();
   var location = $('.storeLike-location').text();

@@ -9,10 +9,25 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/jquery.min.js" charset="utf-8"></script>
   <script src="../js/store.legacy.min.js" charset="utf-8"></script>
-  <script src="../js/common.js" charset="utf-8"></script>
+  <!-- <script src="../js/common.js" charset="utf-8"></script> -->
+  <script src="../js/storeLike.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).storeLike({
+        data: {
+          title: $('.storeLike-title').text(),
+          image : $('#bxslider li').first().children('img').attr('src'),
+          salary : $('.storeLike-salary').text(),
+          location : $('.storeLike-location').text(),
+          jobCategory : $('.storeLike-job-category').text(),
+          jobStatus : $('.storeLike-job-status').text()
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-  <button class="storeLike-btn fa fa-star-o">お気に入りに追加する</button>
+  <button id="storeLike-btn" class="fa fa-star-o">お気に入りに追加する</button>
 
   <ul id="bxslider" class="clearfix">
     <li><img src="../images/martin-sattler-160751.jpg" alt=""></li>

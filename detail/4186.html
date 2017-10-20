@@ -15,23 +15,27 @@
   <script type="text/javascript">
     $(function(){
       $(window).storeLike({
-        object: {
-          title: $('a'),
-          text: $('h2').text()
+        data: {
+          title: $('.storeLike-title').text(),
+          image : $('#bxslider li').first().children('img').attr('src'),
+          salary : $('.storeLike-salary').text(),
+          location : $('.storeLike-location').text(),
+          jobCategory : $('.storeLike-job-category').text(),
+          jobStatus : $('.storeLike-job-status').text()
         }
       });
     });
   </script>
 </head>
 <body>
-  <button class="storeLike-btn fa fa-star-o">お気に入りに追加する</button>
+  <button id="storeLike-btn" class="fa fa-star-o">お気に入りに追加する</button>
   <ul id="bxslider" class="clearfix">
     <li><img src="../images/olu-eletu-134760.jpg" alt=""></li>
     <li><img src="../images/ales-krivec-188743.jpg" alt=""></li>
     <li><img src="../images/martin-sattler-160751.jpg" alt=""></li>
   </ul>
   <div class="jobdetail">
-    <h2 itemprop="title">保育ルームOhana梅屋敷駅前園</h2>
+    <h2 class="storeLike-title">保育ルームOhana梅屋敷駅前園</h2>
     <table class="detail">
       <tr>
         <th>給与</th>

@@ -36,7 +36,7 @@ h1 {
   position: relative;
 }
 
-.storeLike-link .storeLike-count {
+.storeLike-link #storeLike-show-counts {
   border: 1px solid #ccc;
   border-radius: 50%;
   width: 30px;
@@ -72,7 +72,7 @@ h1 {
   display: block;
 }
 
-#storeLike-show-list li {
+#storeLike-show-lists li {
   width: 220px;
   /*height: 250px;*/
   float: left;
@@ -85,18 +85,18 @@ h1 {
   margin-right: 20px;
 }
 
-#storeLike-show-list li a {
+#storeLike-show-lists li a {
   display: block;
 }
 
-#storeLike-show-list li a img {
+#storeLike-show-lists li a img {
   width: 220px;
 }
 
-#storeLike-show-list li a .inner {
+#storeLike-show-lists li a .inner {
   padding: 5px;
 }
 
-#storeLike-show-list li a .inner h5 {
+#storeLike-show-lists li a .inner h5 {
   font-size: 14px;
 }
